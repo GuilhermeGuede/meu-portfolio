@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import "tailwindcss/tailwind.css";
+import Link from "next/link";
 
 export default function Sobre() {
   return (
@@ -12,9 +13,9 @@ export default function Sobre() {
         <h1 className="text-2xl font-extrabold">Sobre Mim</h1>
         <nav>
           <ul className="flex space-x-6">
-            <li><a href="/" className="hover:text-gray-300 transition duration-300">Home</a></li>
-            <li><a href="/projetos" className="hover:text-gray-300 transition duration-300">Projetos</a></li>
-            <li><a href="/contato" className="hover:text-gray-300 transition duration-300">Contato</a></li>
+            <Link href="/" className="hover:text-gray-300 transition duration-300">Home</Link>
+            <Link href="/projetos" className="hover:text-gray-300 transition duration-300">Projetos</Link>
+            <Link href="/contato" className="hover:text-gray-300 transition duration-300">Contato</Link>
           </ul>
         </nav>
       </header>
