@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,9 +14,9 @@ export default function Home() {
         <h1 className="text-2xl font-extrabold">Meu Portfólio</h1>
         <nav>
           <ul className="flex space-x-6">
-            <li><a href="about/" className="hover:text-gray-300 transition duration-300">Sobre</a></li>
-            <li><a href="#projetos" className="hover:text-gray-300 transition duration-300">Projetos</a></li>
-            <li><a href="#contato" className="hover:text-gray-300 transition duration-300">Contato</a></li>
+            <Link href="about/" className="hover:text-gray-300 transition duration-300">Sobre</Link>
+            <Link href="#projetos" className="hover:text-gray-300 transition duration-300">Projetos</Link>
+            <Link href="#contato" className="hover:text-gray-300 transition duration-300">Contato</Link>
           </ul>
         </nav>
       </header>
